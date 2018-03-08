@@ -1,0 +1,4 @@
+1.允许（允许之后不需再询问）
+2.第一次拒绝后，第二次以后会回调ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_FINE_LOCATION)，
+大致意思是你可以给用户一个说明需要该权限的理由，好让用户同意
+3.用户点击了 禁止后不在询问 ，在此之后再次申请不会弹窗提示用户。直接回调授权失败（只能手动在设置中开启）
